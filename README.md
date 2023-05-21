@@ -1,26 +1,16 @@
-# International-Conference-Project
+# International-Conference-Project Breast Cancer Classification Project
 
-This is a DBMS project for managing forensic evidence and reports, as well as performing image processing operations such as matching of evidences stored in the database.
+This project aims to classify breast cancer tumors as benign or malignant using machine learning algorithms. The project was presented at the International Conference on Recent Innovations in Research, Industry, and Community (ICRIRCMS) organized by Mahsa University Malaysia and K.S Rangasamy College of Technology Tiruchengode in 2022.
+# Dataset
+The dataset used for this project is the Breast Cancer Wisconsin (Diagnostic) dataset, which is publicly available on the UCI Machine Learning Repository. The dataset contains 569 samples of breast cancer tumors, with 30 features computed from a digitized image of a fine needle aspirate (FNA) of a breast mass.
+# Methodology
+The project used the following methodology:
 
-# Requirements
-Apache 2.4
-MySQL 5.7
-PHP 7.2
-PHP ImageMagick-7.0.7 extension for image processing functions
-
-# Installation
-Clone the repository to your local machine.
-Install Apache, MySQL and PHP on your machine if you haven't already.
-Install the PHP ImageMagick-7.0.7 extension.
-Create a new MySQL database and import the database.sql file located in the sql directory.
-Update the database connection settings in the config.php file located in the includes directory.
-Start Apache and navigate to the project directory in your web browser.
-
-# Usage
-Once you have installed and configured the project, you can use it to manage forensic evidence and reports, as well as perform image processing operations such as matching of evidences stored in the database.
-
-# Contributing
-If you would like to contribute to this project, please submit a pull request with your changes.
-
-# License
-This project is licensed under the Apache License - see the LICENSE file for details.
+1. Data preprocessing: The dataset was cleaned, missing values were handled, and the features were scaled.
+2. Feature selection: The most important features were selected using Recursive Feature Elimination (RFE).
+3. Model selection: Three machine learning algorithms were evaluated - Logistic Regression, Support Vector Machines (SVM), and Random Forest.
+4. Model evaluation: The models were evaluated using accuracy, precision, recall, and F1-score.
+# Results
+The Random Forest algorithm achieved the highest accuracy of 97.54%, with precision of 97.61%, recall of 96.77%, and F1-score of 97.19%.
+# Conclusion
+The results demonstrate that machine learning algorithms can effectively classify breast cancer tumors as benign or malignant. The Random Forest algorithm was found to be the most effective for this task, achieving a high accuracy and precision. This project has potential applications in medical diagnosis and treatment planning.
